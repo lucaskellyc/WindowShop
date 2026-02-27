@@ -1,0 +1,24 @@
+{
+  "name": "installation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaskellyc/Senior-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaskellyc/Senior-Project/issues"
+  },
+  "homepage": "https://github.com/lucaskellyc/Senior-Project#readme",
+  "dependencies": {
+    "interactjs": "^1.10.27",
+    "nodetoy": "^1.0.2"
+  }
+}

@@ -1,0 +1,37 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        background-color: #222;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        background-color: #aaa;
+    }
+}
+
+@media (max-width: 1000px) {
+    canvas:nth-child(1) {
+        visibility: hidden;
+    }
+    canvas:nth-child(3) {
+        visibility: hidden;
+    }
+}
+
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+#columns {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+}
+
+canvas {
+    min-width: 300px;
+    touch-action: none;
+}

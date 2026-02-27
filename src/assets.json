@@ -1,0 +1,162 @@
+{
+  "columns": [
+    {
+      "segments": [
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 0,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        },
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 1,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        },
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 2,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        },
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 3,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        }
+      ],
+      "modules": [
+        {
+          "index": 0,
+          "children": [],
+          "lights": []
+        },
+        {
+          "index": 1,
+          "children": [],
+          "lights": []
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 0,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        },
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 1,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        },
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 2,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        },
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 3,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        }
+      ],
+      "modules": [
+        {
+          "index": 0,
+          "children": [],
+          "lights": []
+        },
+        {
+          "index": 1,
+          "children": [],
+          "lights": [
+            {
+              "subindex": 0,
+              "position": { "x": -1, "y": -1, "z": 2 },
+              "color": "0xffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 0,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        },
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 1,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        },
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 2,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        },
+        {
+          "mesh": "assets/segment_tester.glb",
+          "index": 3,
+          "material": {
+            "type": "debug",
+            "color": "0xaaaaaa"
+          }
+        }
+      ],
+      "modules": [
+        {
+          "index": 0,
+          "children": [],
+          "lights": []
+        },
+        {
+          "index": 1,
+          "children": [],
+          "lights": []
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "textures": [
+      {
+        "name": "tester",
+        "items": [{ "type": "diffuse", "src": "assets/tester.jpg" }]
+      }
+    ]
+  }
+}
