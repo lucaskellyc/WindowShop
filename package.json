@@ -21,6 +21,7 @@
   "homepage": "https://github.com/lucaskellyc/Senior-Project#readme",
   "dependencies": {
     "interactjs": "^1.10.27",
-    "nodetoy": "^1.0.2"
+    "nodetoy": "^1.0.2",
+    "vite": "^5.0.0"
   }
 }
