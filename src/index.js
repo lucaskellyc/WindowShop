@@ -141,7 +141,8 @@ interact(renderers[1].domElement)
     inertia: true,
     inertia: {
       resistance: 1,
-      allowResume: true,
+      minSpeed: 200,
+      endOnly: true,
     },
     onstart: (event) => {
       touchMode = window.matchMedia("(pointer: coarse)").matches;
