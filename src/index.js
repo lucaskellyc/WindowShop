@@ -6,6 +6,7 @@ import interact from "interactjs";
 
 import { shaderData } from "./shaders.js";
 import { ResourceSet } from "./resources.js";
+import { Column } from "./column.js";
 
 import assets from "./assets.json";
 import { texture } from "three/src/nodes/TSL.js";
