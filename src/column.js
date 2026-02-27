@@ -304,7 +304,7 @@ export class Column {
       (child) => child.type === "PointLight",
     );
 
-    //scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
   }
   update() {
     this.cursor = this.origin;

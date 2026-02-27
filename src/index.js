@@ -152,7 +152,7 @@ interact(renderers[1].domElement)
     },
     onmove: (event) => {
       if (touchMode) {
-        touchScroll = event.dy / 5;
+        touchScroll = event.dy / 2;
         midtown.scroll(-touchScroll);
       }
     },
