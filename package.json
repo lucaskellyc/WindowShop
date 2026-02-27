@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/lucaskellyc/Senior-Project#readme",
   "dependencies": {
+    "@nodetoy/three-nodetoy": "^0.1.36",
     "interactjs": "^1.10.27",
     "nodetoy": "^1.0.2",
     "three": "^0.183.1",
