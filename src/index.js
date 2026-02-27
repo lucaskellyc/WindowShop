@@ -140,7 +140,7 @@ interact(renderers[1].domElement)
   .draggable({
     inertia: true,
     inertia: {
-      resistance: 4,
+      resistance: 2,
       allowResume: true,
     },
     onstart: (event) => {
