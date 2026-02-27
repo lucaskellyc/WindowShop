@@ -22,6 +22,7 @@
   "dependencies": {
     "interactjs": "^1.10.27",
     "nodetoy": "^1.0.2",
+    "three": "^0.183.1",
     "vite": "^5.0.0"
   },
   "devDependencies": {
