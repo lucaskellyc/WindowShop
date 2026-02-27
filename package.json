@@ -23,5 +23,8 @@
     "interactjs": "^1.10.27",
     "nodetoy": "^1.0.2",
     "vite": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.4"
   }
 }
