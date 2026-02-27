@@ -5,6 +5,7 @@ import { NodeToyMaterial } from "@nodetoy/three-nodetoy";
 import interact from "interactjs";
 
 import { shaderData } from "./shaders.js";
+import { ResourceSet } from "./resources.js";
 
 import assets from "./assets.json";
 import { texture } from "three/src/nodes/TSL.js";
