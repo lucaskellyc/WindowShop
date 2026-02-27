@@ -87,10 +87,38 @@
         {
           "index": 0,
           "children": [],
-          "lights": []
+          "lights": [
+            {
+              "subindex": 0,
+              "position": { "x": -1, "y": -1, "z": 2 },
+              "color": "0xff0000"
+            }
+          ]
         },
         {
           "index": 1,
+          "children": [],
+          "lights": [
+            {
+              "subindex": 0,
+              "position": { "x": -1, "y": -1, "z": 2 },
+              "color": "0x00ff00"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "children": [],
+          "lights": [
+            {
+              "subindex": 0,
+              "position": { "x": -1, "y": -1, "z": 2 },
+              "color": "0x0000ff"
+            }
+          ]
+        },
+        {
+          "index": 3,
           "children": [],
           "lights": [
             {
