@@ -140,8 +140,8 @@ interact(renderers[1].domElement)
   .draggable({
     inertia: true,
     inertia: {
-      resistance: 1,
-      minSpeed: 200,
+      resistance: 3,
+      minSpeed: 300,
       endOnly: true,
     },
     onstart: (event) => {
