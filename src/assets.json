@@ -3,7 +3,7 @@
     {
       "segments": [
         {
-          "mesh": "assets/segment_tester.glb",
+          "mesh": "assets/segment_funhouse.glb",
           "index": 0,
           "material": {
             "type": "debug",
@@ -11,7 +11,7 @@
           }
         },
         {
-          "mesh": "assets/segment_tester.glb",
+          "mesh": "assets/segment_television.glb",
           "index": 1,
           "material": {
             "type": "debug",
@@ -38,92 +38,268 @@
       "modules": [
         {
           "index": 0,
-          "children": [],
-          "lights": []
-        },
-        {
-          "index": 1,
-          "children": [],
-          "lights": []
-        }
-      ]
-    },
-    {
-      "segments": [
-        {
-          "mesh": "assets/segment_tester.glb",
-          "index": 0,
-          "material": {
-            "type": "debug",
-            "color": "0xaaaaaa"
-          }
-        },
-        {
-          "mesh": "assets/segment_tester.glb",
-          "index": 1,
-          "material": {
-            "type": "debug",
-            "color": "0xaaaaaa"
-          }
-        },
-        {
-          "mesh": "assets/segment_tester.glb",
-          "index": 2,
-          "material": {
-            "type": "debug",
-            "color": "0xaaaaaa"
-          }
-        },
-        {
-          "mesh": "assets/segment_tester.glb",
-          "index": 3,
-          "material": {
-            "type": "debug",
-            "color": "0xaaaaaa"
-          }
-        }
-      ],
-      "modules": [
-        {
-          "index": 0,
-          "children": [],
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/funhouse_1.glb",
+              "material": {
+                "color": "0xffffff",
+                "type": "debug"
+              },
+              "position": { "x": 0, "y": -1.6, "z": 0.4 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 1,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.1,
+                "index": 3,
+                "delay": 0,
+                "type": "nodetoy"
+              },
+              "position": { "x": 0, "y": -0.75, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 2,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.05,
+                "index": 3,
+                "delay": 2.5,
+                "type": "nodetoy"
+              },
+              "position": { "x": 0.4, "y": -0.75, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 3,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.1,
+                "index": 3,
+                "delay": 0,
+                "type": "nodetoy"
+              },
+              "position": { "x": 0.78, "y": -0.8, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 4,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.05,
+                "index": 3,
+                "delay": 2.5,
+                "type": "nodetoy"
+              },
+              "position": { "x": 0.8, "y": -1.2, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 5,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.1,
+                "index": 3,
+                "delay": 0,
+                "type": "nodetoy"
+              },
+              "position": { "x": 0.8, "y": -1.6, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 6,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.05,
+                "index": 3,
+                "delay": 2.5,
+                "type": "nodetoy"
+              },
+              "position": { "x": 0.8, "y": -2, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 7,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.1,
+                "index": 3,
+                "delay": 0,
+                "type": "nodetoy"
+              },
+              "position": { "x": 0.78, "y": -2.35, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 8,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.05,
+                "index": 3,
+                "delay": 2.5,
+                "type": "nodetoy"
+              },
+              "position": { "x": 0.4, "y": -2.4, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 9,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.1,
+                "index": 3,
+                "delay": 0,
+                "type": "nodetoy"
+              },
+              "position": { "x": 0, "y": -2.4, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 10,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.05,
+                "index": 3,
+                "delay": 2.5,
+                "type": "nodetoy"
+              },
+              "position": { "x": -0.4, "y": -2.4, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 11,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.1,
+                "index": 3,
+                "delay": 0,
+                "type": "nodetoy"
+              },
+              "position": { "x": -0.78, "y": -2.35, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 12,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.05,
+                "index": 3,
+                "delay": 2.5,
+                "type": "nodetoy"
+              },
+              "position": { "x": -0.8, "y": -2, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 13,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.1,
+                "index": 3,
+                "delay": 0,
+                "type": "nodetoy"
+              },
+              "position": { "x": -0.8, "y": -1.6, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 14,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.05,
+                "index": 3,
+                "delay": 2.5,
+                "type": "nodetoy"
+              },
+              "position": { "x": -0.8, "y": -1.2, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 15,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.1,
+                "index": 3,
+                "delay": 0,
+                "type": "nodetoy"
+              },
+              "position": { "x": -0.78, "y": -0.8, "z": 0.45 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 16,
+              "mesh": "assets/funhouse_2.glb",
+              "material": {
+                "hue": 0.05,
+                "index": 3,
+                "delay": 2.5,
+                "type": "nodetoy"
+              },
+              "position": { "x": -0.4, "y": -0.75, "z": 0.45 }
+            }
+          ],
           "lights": [
             {
+              "behavior": {
+                "type": "alternate",
+                "delay": 0
+              },
               "subindex": 0,
-              "position": { "x": -1, "y": -1, "z": 2 },
-              "color": "0xff0000"
+              "position": { "x": 0, "y": -1.7, "z": 2 },
+              "color": "0xcc745f"
+            },
+            {
+              "behavior": {
+                "type": "alternate",
+                "delay": 15.5
+              },
+              "subindex": 0,
+              "position": { "x": 0, "y": -1.7, "z": 2 },
+              "color": "0xccc576"
             }
           ]
         },
         {
           "index": 1,
-          "children": [],
-          "lights": [
+          "children": [
             {
+              "behavior": "none",
+              "dimmable": false,
               "subindex": 0,
-              "position": { "x": -1, "y": -1, "z": 2 },
-              "color": "0x00ff00"
+              "mesh": "assets/tv_screen.glb",
+              "material": {
+                "texture": "static",
+                "type": "television"
+              },
+              "position": { "x": 0, "y": -1.15, "z": 0.48 }
             }
-          ]
-        },
-        {
-          "index": 2,
-          "children": [],
+          ],
           "lights": [
             {
+              "behavior": "none",
               "subindex": 0,
-              "position": { "x": -1, "y": -1, "z": 2 },
-              "color": "0x0000ff"
-            }
-          ]
-        },
-        {
-          "index": 3,
-          "children": [],
-          "lights": [
-            {
-              "subindex": 0,
-              "position": { "x": -1, "y": -1, "z": 2 },
+              "position": { "x": 0, "y": -1, "z": 2 },
               "color": "0xffffff"
             }
           ]
@@ -133,48 +309,810 @@
     {
       "segments": [
         {
-          "mesh": "assets/segment_tester.glb",
+          "mesh": "assets/segment_corporate.glb",
           "index": 0,
           "material": {
-            "type": "debug",
-            "color": "0xaaaaaa"
+            "roughness": 0.5,
+            "type": "standard",
+            "textures": "segment_office"
           }
         },
         {
-          "mesh": "assets/segment_tester.glb",
+          "mesh": "assets/segment_clocks.glb",
           "index": 1,
           "material": {
-            "type": "debug",
-            "color": "0xaaaaaa"
+            "roughness": 0.5,
+            "type": "standard",
+            "textures": "clocks"
           }
         },
         {
-          "mesh": "assets/segment_tester.glb",
+          "mesh": "assets/segment_vault.glb",
           "index": 2,
           "material": {
-            "type": "debug",
-            "color": "0xaaaaaa"
+            "metalness": 0.8,
+            "roughness": 0.4,
+            "type": "standard",
+            "textures": "vault5"
           }
         },
         {
-          "mesh": "assets/segment_tester.glb",
+          "mesh": "assets/segment_vent.glb",
           "index": 3,
           "material": {
+            "metalness": 0,
+            "roughness": 0.7,
+            "type": "standard",
+            "textures": "segment_vent"
+          }
+        },
+        {
+          "mesh": "assets/segment_television.glb",
+          "index": 4,
+          "material": {
             "type": "debug",
-            "color": "0xaaaaaa"
+            "color": "0xcccccc"
           }
         }
       ],
       "modules": [
         {
           "index": 0,
-          "children": [],
-          "lights": []
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/office_1.glb",
+              "material": {
+                "type": "nodetoy",
+                "index": 2
+              },
+              "position": { "x": 0, "y": 0, "z": 0 }
+            },
+            {
+              "behavior": {
+                "type": "scroll"
+              },
+              "dimmable": true,
+              "subindex": 1,
+              "mesh": "assets/interior_wall.glb",
+              "material": {
+                "type": "interior",
+                "textures": "interior_corporate2"
+              },
+              "position": { "x": 0, "y": -1.5, "z": 0 }
+            },
+            {
+              "behavior": {
+                "type": "scroll"
+              },
+              "dimmable": true,
+              "subindex": 2,
+              "mesh": "assets/interior_wall.glb",
+              "material": {
+                "type": "interior",
+                "textures": "interior_corporate1"
+              },
+              "position": { "x": 0, "y": -5.5, "z": 0 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 3,
+              "mesh": "assets/segment_seam.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": -6.5, "z": 0 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": 1, "y": -1, "z": 2 },
+              "color": "0xffffff"
+            }
+          ]
         },
         {
           "index": 1,
-          "children": [],
-          "lights": []
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/segment_seam.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": -2, "z": 0 }
+            },
+            {
+              "behavior": {
+                "type": "scroll"
+              },
+              "dimmable": false,
+              "subindex": 1,
+              "mesh": "assets/stockticker1.glb",
+              "material": {
+                "type": "unlit",
+                "textures": "stockticker"
+              },
+              "position": { "x": 0, "y": 0, "z": 0.05 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 2,
+              "mesh": "assets/stockticker2.glb",
+              "material": {
+                "type": "nodetoy",
+                "index": 2
+              },
+              "position": { "x": 0, "y": 0, "z": 0.05 }
+            },
+            {
+              "behavior": {
+                "speed": -0.001,
+                "start": 0,
+                "type": "clockwise"
+              },
+              "dimmable": false,
+              "subindex": 3,
+              "mesh": "assets/clock1b.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": -0.4, "y": -0.62, "z": 0.45 }
+            },
+            {
+              "behavior": {
+                "speed": -0.0001,
+                "start": -1,
+                "type": "clockwise"
+              },
+              "dimmable": false,
+              "subindex": 4,
+              "mesh": "assets/clock1a.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": -0.4, "y": -0.62, "z": 0.45 }
+            },
+            {
+              "behavior": {
+                "speed": -0.001,
+                "start": 0.7,
+                "type": "clockwise"
+              },
+              "dimmable": false,
+              "subindex": 5,
+              "mesh": "assets/clock1b.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0.4, "y": -0.62, "z": 0.45 }
+            },
+            {
+              "behavior": {
+                "speed": -0.0001,
+                "start": 0.5,
+                "type": "clockwise"
+              },
+              "dimmable": false,
+              "subindex": 6,
+              "mesh": "assets/clock1a.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0.4, "y": -0.62, "z": 0.45 }
+            },
+            {
+              "behavior": {
+                "speed": -0.001,
+                "start": 0,
+                "type": "clockwise"
+              },
+              "dimmable": false,
+              "subindex": 7,
+              "mesh": "assets/clock1b.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": -0.4, "y": -1.4, "z": 0.45 }
+            },
+            {
+              "behavior": {
+                "speed": -0.0001,
+                "start": 1.8,
+                "type": "clockwise"
+              },
+              "dimmable": false,
+              "subindex": 8,
+              "mesh": "assets/clock1a.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": -0.4, "y": -1.4, "z": 0.45 }
+            },
+            {
+              "behavior": {
+                "speed": -0.001,
+                "start": 1.8,
+                "type": "clockwise"
+              },
+              "dimmable": false,
+              "subindex": 9,
+              "mesh": "assets/clock1b.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0.4, "y": -1.4, "z": 0.45 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": -1, "y": -1, "z": 2 },
+              "color": "0xffffff"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/vault2.glb",
+              "material": {
+                "metalness": 1.0,
+                "color": "0x909bb1",
+                "textures": "vault2",
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -1.8, "z": 0.4 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 1,
+              "mesh": "assets/vault1.glb",
+              "material": {
+                "metalness": 1.0,
+                "color": "0xbebdb2",
+                "textures": "vault1",
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -1.8, "z": 0.4 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 2,
+              "mesh": "assets/vault4.glb",
+              "material": {
+                "metalness": 1.0,
+                "color": "0xbebdb2",
+                "textures": "vault4",
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -1.8, "z": 0.4 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 3,
+              "mesh": "assets/vault3.glb",
+              "material": {
+                "metalness": 1.0,
+                "color": "0x909bb1",
+                "textures": "vault3",
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -1.8, "z": 0.4 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": -1, "y": -2, "z": 2 },
+              "color": "0xffffff"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/vent_1a.glb",
+              "material": {
+                "color": "0xbebdb2",
+                "metalness": 0.8,
+                "roughness": 0.3,
+                "textures": "vent_1",
+                "transparent": false,
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -1.47, "z": 0.2 }
+            },
+            {
+              "behavior": {
+                "speed": 0.7,
+                "start": 0,
+                "type": "clockwise"
+              },
+              "dimmable": false,
+              "subindex": 1,
+              "mesh": "assets/vent_1b.glb",
+              "material": {
+                "metalness": 0.8,
+                "roughness": 0.3,
+                "type": "standard",
+                "color": "0xbebdb2"
+              },
+              "position": { "x": 0, "y": -1.47, "z": 0.5 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 2,
+              "mesh": "assets/vent_1c.glb",
+              "material": {
+                "color": "0xbebdb2",
+                "metalness": 0.8,
+                "roughness": 0.3,
+                "textures": "vent_2",
+                "transparent": true,
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -1.47, "z": 0.4 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 3,
+              "mesh": "assets/vent_1d.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": -1.47, "z": 0.3 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 4,
+              "mesh": "assets/segment_seam.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": -2.5, "z": 0 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 5,
+              "mesh": "assets/segment_seam.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": 0.5, "z": 0 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": -1, "y": -1, "z": 2 },
+              "color": "0xffffff"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/tv_screen.glb",
+              "material": {
+                "texture": "static",
+                "type": "television"
+              },
+              "position": { "x": 0, "y": -1.15, "z": 0.48 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": 0, "y": -1, "z": 2 },
+              "color": "0xffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "mesh": "assets/segment_fancy.glb",
+          "index": 0,
+          "material": {
+            "shiny": false,
+            "textures": "segment_fancy",
+            "transparent": false,
+            "type": "standard"
+          }
+        },
+        {
+          "mesh": "assets/segment_regal.glb",
+          "index": 1,
+          "material": {
+            "shiny": false,
+            "textures": "fountain4",
+            "transparent": false,
+            "type": "standard"
+          }
+        },
+        {
+          "mesh": "assets/segment_aero.glb",
+          "index": 2,
+          "material": {
+            "shiny": false,
+            "textures": "segment_aero",
+            "transparent": false,
+            "type": "standard"
+          }
+        },
+        {
+          "mesh": "assets/segment_chic.glb",
+          "index": 3,
+          "material": {
+            "type": "debug",
+            "color": "0xcdbea4"
+          }
+        },
+        {
+          "mesh": "assets/segment_television.glb",
+          "index": 4,
+          "material": {
+            "type": "debug",
+            "color": "0xcccccc"
+          }
+        }
+      ],
+      "modules": [
+        {
+          "index": 0,
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/module_fancy_1a.glb",
+              "material": {
+                "textures": "window_fancy1",
+                "transparent": false,
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -2.16, "z": 0.05 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 1,
+              "mesh": "assets/module_fancy_1b.glb",
+              "material": {
+                "color": "0x434f49",
+                "textures": "window_fancy2",
+                "transparent": true,
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -2.16, "z": 0.1 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 2,
+              "mesh": "assets/module_fancy_1c.glb",
+              "material": {
+                "roughness": 0.3,
+                "textures": "window_fancy3",
+                "transparent": false,
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -2.15, "z": 0.1 }
+            },
+            {
+              "behavior": {
+                "direction": "right",
+                "type": "scroll"
+              },
+              "dimmable": true,
+              "subindex": 3,
+              "mesh": "assets/interior_wall.glb",
+              "material": {
+                "type": "interior",
+                "textures": "interior_fancy1"
+              },
+              "position": { "x": 0, "y": -2, "z": 0 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 4,
+              "mesh": "assets/segment_seam.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": -4, "z": -0.1 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 5,
+              "mesh": "assets/segment_seam.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": 0.1, "z": -0.1 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": 2, "y": -1.5, "z": 2 },
+              "color": "0xbfbfcf"
+            },
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": -1, "y": -2.5, "z": 2 },
+              "color": "0x64646c"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/module_fancy_2a.glb",
+              "material": {
+                "textures": "fountain2",
+                "transparent": false,
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -2.4, "z": 0.35 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 1,
+              "mesh": "assets/module_fancy_2b.glb",
+              "material": {
+                "textures": "fountain1",
+                "transparent": false,
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -2.4, "z": 0.35 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 2,
+              "mesh": "assets/module_fancy_2c.glb",
+              "material": {
+                "textures": "fountain3",
+                "transparent": false,
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -2.4, "z": 0.35 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 3,
+              "mesh": "assets/module_fancy_2d.glb",
+              "material": {
+                "type": "nodetoy",
+                "index": 0
+              },
+              "position": { "x": 0, "y": -2.4, "z": 0.35 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": 1, "y": -1, "z": 3 },
+              "color": "0xe1d4c2"
+            },
+            {
+              "behavior": "none",
+              "subindex": 1,
+              "position": { "x": -1, "y": -3, "z": 3 },
+              "color": "0xbfbfcf"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/aero.glb",
+              "material": {
+                "color": "0xbcc2bd",
+                "textures": "aero",
+                "type": "standard"
+              },
+              "position": { "x": 0, "y": -2.8, "z": 0 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 1,
+              "mesh": "assets/segment_seam.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": 0.1, "z": -0.1 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 2,
+              "mesh": "assets/segment_seam.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": -3.2, "z": 0 }
+            },
+            {
+              "behavior": {
+                "type": "scroll"
+              },
+              "dimmable": true,
+              "subindex": 3,
+              "mesh": "assets/interior_wall.glb",
+              "material": {
+                "type": "interior",
+                "textures": "interior_fancy2"
+              },
+              "position": { "x": 0, "y": -2, "z": 0 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": 0, "y": -1, "z": 2 },
+              "color": "0xc3bdb0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "children": [
+            {
+              "behavior": {
+                "type": "turntable"
+              },
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/module_fancy_3a.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x776e5e"
+              },
+              "position": { "x": 0, "y": -2.7, "z": 0 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 1,
+              "mesh": "assets/module_fancy_3b.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x776e5e"
+              },
+              "position": { "x": 0, "y": -3.1, "z": 0 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 2,
+              "mesh": "assets/module_fancy_3c.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x776e5e"
+              },
+              "position": { "x": 0, "y": -5.6, "z": 0 }
+            },
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 3,
+              "mesh": "assets/segment_seam.glb",
+              "material": {
+                "type": "debug",
+                "color": "0x000000"
+              },
+              "position": { "x": 0, "y": -7, "z": -0.1 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": "none",
+              "subindex": 0,
+              "position": { "x": 0, "y": -1, "z": 2 },
+              "color": "0x000000"
+            },
+            {
+              "behavior": "none",
+              "subindex": 1,
+              "position": { "x": 0, "y": -4.5, "z": 2 },
+              "color": "0x000000"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "children": [
+            {
+              "behavior": "none",
+              "dimmable": false,
+              "subindex": 0,
+              "mesh": "assets/tv_screen.glb",
+              "material": {
+                "texture": "uptown_tv1",
+                "type": "television"
+              },
+              "position": { "x": 0, "y": -1.15, "z": 0.48 }
+            }
+          ],
+          "lights": [
+            {
+              "behavior": {
+                "type": "flicker"
+              },
+              "subindex": 0,
+              "position": { "x": 0, "y": -1, "z": 2 },
+              "color": "0xffffff"
+            }
+          ]
         }
       ]
     }
@@ -184,6 +1122,173 @@
       {
         "name": "tester",
         "items": [{ "type": "diffuse", "src": "assets/tester.jpg" }]
+      },
+      {
+        "name": "stockticker",
+        "items": [{ "type": "diffuse", "src": "assets/stockticker.jpg" }]
+      },
+      {
+        "name": "segment_fancy",
+        "items": [
+          { "type": "diffuse", "src": "assets/segment_fancy_color.jpg" },
+          { "type": "normal", "src": "assets/segment_fancy_norm.jpg" }
+        ]
+      },
+      {
+        "name": "window_fancy1",
+        "items": [
+          { "type": "diffuse", "src": "assets/window_fancy_color1.jpg" },
+          { "type": "normal", "src": "assets/window_fancy_norm1.jpg" }
+        ]
+      },
+      {
+        "name": "window_fancy2",
+        "items": [
+          { "type": "normal", "src": "assets/window_fancy_norm2.jpg" },
+          { "type": "roughness", "src": "assets/window_fancy_rough2.jpg" },
+          { "type": "alpha", "src": "assets/window_fancy_alpha2.jpg" }
+        ]
+      },
+      {
+        "name": "window_fancy3",
+        "items": [
+          { "type": "diffuse", "src": "assets/window_fancy_color3.jpg" },
+          { "type": "normal", "src": "assets/window_fancy_norm3.jpg" }
+        ]
+      },
+      {
+        "name": "fountain1",
+        "items": [{ "type": "diffuse", "src": "assets/fountain_color1.jpg" }]
+      },
+      {
+        "name": "fountain2",
+        "items": [
+          { "type": "diffuse", "src": "assets/fountain_color2.jpg" },
+          { "type": "normal", "src": "assets/fountain_norm2.jpg" }
+        ]
+      },
+      {
+        "name": "fountain3",
+        "items": [
+          { "type": "diffuse", "src": "assets/fountain_color3.jpg" },
+          { "type": "normal", "src": "assets/fountain_norm3.jpg" }
+        ]
+      },
+      {
+        "name": "fountain4",
+        "items": [
+          { "type": "diffuse", "src": "assets/fountain_color4.jpg" },
+          { "type": "normal", "src": "assets/fountain_norm4.jpg" }
+        ]
+      },
+      {
+        "name": "vault1",
+        "items": [
+          { "type": "normal", "src": "assets/vault_norm1.jpg" },
+          { "type": "roughness", "src": "assets/vault_rough1.jpg" }
+        ]
+      },
+      {
+        "name": "vault2",
+        "items": [
+          { "type": "normal", "src": "assets/vault_norm2.jpg" },
+          { "type": "roughness", "src": "assets/vault_rough2.jpg" }
+        ]
+      },
+      {
+        "name": "vault3",
+        "items": [
+          { "type": "normal", "src": "assets/vault_norm3.jpg" },
+          { "type": "roughness", "src": "assets/vault_rough3.jpg" }
+        ]
+      },
+      {
+        "name": "vault4",
+        "items": [
+          { "type": "normal", "src": "assets/vault_norm4.jpg" },
+          { "type": "roughness", "src": "assets/vault_rough4.jpg" }
+        ]
+      },
+      {
+        "name": "vault5",
+        "items": [
+          { "type": "diffuse", "src": "assets/segment_vault_color.jpg" },
+          { "type": "normal", "src": "assets/segment_vault_norm.jpg" },
+          { "type": "metalness", "src": "assets/segment_vault_metal.jpg" }
+        ]
+      },
+      {
+        "name": "clocks",
+        "items": [
+          { "type": "diffuse", "src": "assets/segment_clocks_color.jpg" },
+          { "type": "normal", "src": "assets/segment_clocks_norm.jpg" }
+        ]
+      },
+      {
+        "name": "segment_office",
+        "items": [
+          { "type": "diffuse", "src": "assets/segment_office_color.jpg" },
+          { "type": "normal", "src": "assets/segment_office_norm.jpg" }
+        ]
+      },
+      {
+        "name": "vent_1",
+        "items": [
+          { "type": "diffuse", "src": "assets/vent1_color.jpg" },
+          { "type": "normal", "src": "assets/vent1_norm.jpg" }
+        ]
+      },
+      {
+        "name": "vent_2",
+        "items": [
+          { "type": "normal", "src": "assets/vent2_norm.jpg" },
+          { "type": "alpha", "src": "assets/vent2_alpha.jpg" }
+        ]
+      },
+      {
+        "name": "segment_vent",
+        "items": [
+          { "type": "diffuse", "src": "assets/segment_vent_color.jpg" },
+          { "type": "normal", "src": "assets/segment_vent_norm.jpg" }
+        ]
+      },
+      {
+        "name": "segment_aero",
+        "items": [{ "type": "diffuse", "src": "assets/segment_aero_color.jpg" }]
+      },
+      {
+        "name": "aero",
+        "items": [{ "type": "normal", "src": "assets/aero_norm.jpg" }]
+      },
+      {
+        "name": "interior_fancy1",
+        "items": [{ "type": "diffuse", "src": "assets/interior_fancy1.jpg" }]
+      },
+      {
+        "name": "interior_fancy2",
+        "items": [{ "type": "diffuse", "src": "assets/interior_fancy2.jpg" }]
+      },
+      {
+        "name": "interior_corporate1",
+        "items": [
+          { "type": "diffuse", "src": "assets/interior_corporate1.jpg" }
+        ]
+      },
+      {
+        "name": "interior_corporate2",
+        "items": [
+          { "type": "diffuse", "src": "assets/interior_corporate2.jpg" }
+        ]
+      }
+    ],
+    "videos": [
+      {
+        "name": "uptown_tv1",
+        "src": "assets/uptown_tv1.mp4"
+      },
+      {
+        "name": "static",
+        "src": "assets/static.mp4"
       }
     ]
   }
