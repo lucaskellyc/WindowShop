@@ -5,8 +5,6 @@ import { NodeToyMaterial } from "@nodetoy/three-nodetoy";
 import interact from "interactjs";
 
 import { shaderData } from "./shaders.js";
-import { ResourceSet } from "./resources.js";
-import { Column } from "./column.js";
 
 import assets from "./assets.json";
 import { texture } from "three/src/nodes/TSL.js";
@@ -60,27 +58,9 @@ loadManager.onLoad = () => {
     uptown.loaded = true;
     midtown.loaded = true;
     downtown.loaded = true;
-    downtown.setup(
-      THREE,
-      scenes[0],
-      resources.textures,
-      shaderData,
-      NodeToyMaterial,
-    );
-    midtown.setup(
-      THREE,
-      scenes[1],
-      resources.textures,
-      shaderData,
-      NodeToyMaterial,
-    );
-    uptown.setup(
-      THREE,
-      scenes[2],
-      resources.textures,
-      shaderData,
-      NodeToyMaterial,
-    );
+    downtown.setup(THREE, scenes[0], resources, shaderData, NodeToyMaterial);
+    midtown.setup(THREE, scenes[1], resources, shaderData, NodeToyMaterial);
+    uptown.setup(THREE, scenes[2], resources, shaderData, NodeToyMaterial);
   }
 };
 
@@ -140,9 +120,8 @@ interact(renderers[1].domElement)
   .draggable({
     inertia: true,
     inertia: {
-      resistance: 3,
-      minSpeed: 300,
-      endOnly: true,
+      resistance: 4,
+      allowResume: true,
     },
     onstart: (event) => {
       touchMode = window.matchMedia("(pointer: coarse)").matches;
@@ -153,7 +132,7 @@ interact(renderers[1].domElement)
     },
     onmove: (event) => {
       if (touchMode) {
-        touchScroll = event.dy;
+        touchScroll = event.dy / 5;
         midtown.scroll(-touchScroll);
       }
     },

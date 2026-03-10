@@ -1,4 +1,4 @@
-export class Column {
+class Column {
   constructor() {
     this.segments = {};
     this.modules = {};
@@ -6,6 +6,7 @@ export class Column {
 
     this.loaded = false;
     this.autoScroll = true;
+    this.frame = 0;
 
     this.origin = 0;
     this.loop = 0;
@@ -14,6 +15,7 @@ export class Column {
     this.currentScroll = 0;
     this.shifting = false;
     this.shifter;
+    this.scrollUp = false;
   }
   loadMeshes(meshLoader, assets) {
     //Preload segments
@@ -48,7 +50,7 @@ export class Column {
       this.modules.imports[i].lights = assets.modules[i].lights;
     }
   }
-  setup(THREE, scene, textures, shaders, NodeToyMaterial) {
+  setup(THREE, scene, resources, shaders, NodeToyMaterial) {
     this.scene = {};
     this.scene.lights = [];
     this.scene.meshes = [];
@@ -67,12 +69,12 @@ export class Column {
           this.segments.objects[i].material = new THREE.MeshStandardMaterial();
 
           if (
-            textures.find(
+            resources.textures.find(
               (texture) =>
                 texture.name === this.segments.imports[i].material.textures,
             )
           ) {
-            this.segments.objects[i].textures = textures.find(
+            this.segments.objects[i].textures = resources.textures.find(
               (texture) =>
                 texture.name === this.segments.imports[i].material.textures,
             ).items;
@@ -150,9 +152,14 @@ export class Column {
             light.position.x;
           this.modules.objects[i].lights[index].object.position.y =
             light.position.y;
+          this.modules.objects[i].lights[index].power = 15;
           this.modules.objects[i].lights[index].object.castShadow = true;
           this.modules.objects[i].lights[index].object.distance = 3.5;
 
+          if (light.behavior) {
+            this.modules.objects[i].lights[index].behavior = light.behavior;
+          }
+          this.scene.lights.push(this.modules.objects[i].lights[index]);
           scene.add(this.modules.objects[i].lights[index].object);
         });
         this.modules.imports
@@ -186,12 +193,12 @@ export class Column {
                 }
 
                 if (
-                  textures.find(
+                  resources.textures.find(
                     (texture) => texture.name === child.material.textures,
                   )
                 ) {
                   this.modules.objects[i].children[index].textures =
-                    textures.find(
+                    resources.textures.find(
                       (texture) => texture.name === child.material.textures,
                     ).items;
                   this.modules.objects[i].children[index].textures.forEach(
@@ -222,6 +229,7 @@ export class Column {
                       }
                     },
                   );
+                  this.modules.objects[i].children[index].shadow = true;
                 }
                 break;
               case "unlit":
@@ -229,7 +237,7 @@ export class Column {
                   new THREE.MeshBasicMaterial({});
 
                 this.modules.objects[i].children[index].material.map =
-                  textures.find(
+                  resources.textures.find(
                     (item) =>
                       item.name ===
                       this.modules.imports[i].children[index].material.textures,
@@ -259,6 +267,66 @@ export class Column {
                   });
                 this.modules.objects[i].children[index].material.name =
                   "nodetoy";
+                if (
+                  this.modules.objects[i].children[index].material.uniforms.hue
+                ) {
+                  this.modules.objects[i].children[
+                    index
+                  ].material.uniforms.hue.value =
+                    "" +
+                    this.modules.imports[i].children[index].material.hue +
+                    "";
+                }
+                if (
+                  this.modules.objects[i].children[index].material.uniforms
+                    .delay
+                ) {
+                  this.modules.objects[i].children[
+                    index
+                  ].material.uniforms.delay.value =
+                    "" +
+                    this.modules.imports[i].children[index].material.delay +
+                    "";
+                }
+                this.modules.objects[i].children[index].shadow = false;
+
+                break;
+              case "television":
+                this.modules.objects[i].children[index].material =
+                  new THREE.MeshBasicMaterial({});
+                this.modules.objects[i].children[index].video =
+                  resources.videos.find(
+                    (video) =>
+                      video.name ===
+                      this.modules.imports[i].children[index].material.texture,
+                  ).video;
+                this.modules.objects[i].children[index].material.map =
+                  new THREE.VideoTexture(
+                    this.modules.objects[i].children[index].video,
+                  );
+                this.modules.objects[i].children[index].video.play();
+                break;
+              case "interior":
+                this.modules.objects[i].children[index].material =
+                  new THREE.MeshBasicMaterial({});
+                this.modules.objects[i].children[index].material.map =
+                  resources.textures.find(
+                    (item) =>
+                      item.name ===
+                      this.modules.imports[i].children[index].material.textures,
+                  ).items[0].texture;
+                this.modules.objects[i].children[index].material.map.wrapS =
+                  THREE.RepeatWrapping;
+                this.modules.objects[i].children[index].material.map.wrapT =
+                  THREE.RepeatWrapping;
+                this.modules.objects[i].children[index].material.transparent =
+                  true;
+                this.modules.objects[i].children[index].material.map.repeat.set(
+                  2.5,
+                  2.5,
+                );
+                this.modules.objects[i].children[index].material.name = "unlit";
+                break;
             }
 
             this.modules.objects[i].children[index].mesh = new THREE.Mesh(
@@ -269,7 +337,8 @@ export class Column {
             this.modules.objects[i].children[index].behavior = child.behavior;
             this.modules.objects[i].children[index].dimmable = child.dimmable;
             this.modules.objects[i].children[index].position = child.position;
-            this.modules.objects[i].children[index].mesh.castShadow = true;
+            this.modules.objects[i].children[index].mesh.castShadow =
+              this.modules.objects[i].children[index].shadow;
             this.modules.objects[i].children[index].mesh.receiveShadow = false;
             scene.add(this.modules.objects[i].children[index].mesh);
 
@@ -300,13 +369,14 @@ export class Column {
     this.breakpoint.top = this.segments.objects[0].bounds.y;
     this.breakpoint.bottom = -this.loop;
 
-    this.scene.lights = scene.children.filter(
-      (child) => child.type === "PointLight",
-    );
+    this.scene.lights.forEach((light) => {
+      light.intensity = 15;
+    });
 
-    scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+    //scene.add(new THREE.AmbientLight(0xffffff, 0.5));
   }
   update() {
+    this.frame += 1;
     this.cursor = this.origin;
     this.segments.objects.forEach((segment, index) => {
       segment.mesh.position.y = this.cursor + this.currentScroll;
@@ -343,10 +413,29 @@ export class Column {
           .lights.forEach((light) => {
             light.object.position.y =
               light.position.y + this.cursor + this.currentScroll;
+            if (light.behavior && light.behavior.type) {
+              switch (light.behavior.type) {
+                case "flicker":
+                  light.intensity =
+                    light.power + Math.random() * (0.5 - 1.5) + 1.5;
+                  break;
+                case "alternate":
+                  light.intensity =
+                    Math.sin(light.behavior.delay + this.frame * 0.18) * 10;
+                  break;
+              }
+            }
           });
       }
 
       this.cursor -= segment.bounds.y;
+
+      this.scene.lights.forEach((light) => {
+        light.object.intensity = Math.max(
+          light.intensity - Math.abs((light.object.position.y + 5) * 4),
+          0,
+        );
+      });
     });
   }
   scroll(velocity) {
@@ -385,19 +474,6 @@ export class Column {
       this.shifting = true;
     } else {
       this.shifting = false;
-
-      this.scene.lights.forEach((light) => {
-        light.intensity = Math.max(
-          15 - Math.abs((light.position.y + 5) * 5),
-          0,
-        );
-      });
-      this.scene.dimmables.forEach((dimmable) => {
-        switch (dimmable.material.name) {
-          case "nodetoy":
-            dimmable.material.data.Intensity = 1;
-        }
-      });
     }
   }
 }
