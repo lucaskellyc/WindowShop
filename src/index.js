@@ -122,7 +122,7 @@ interact(renderers[1].domElement)
   .draggable({
     inertia: true,
     inertia: {
-      resistance: 2,
+      resistance: 3,
       allowResume: true,
     },
     onstart: (event) => {
@@ -134,7 +134,7 @@ interact(renderers[1].domElement)
     },
     onmove: (event) => {
       if (touchMode) {
-        touchScroll = event.dy / 5;
+        touchScroll = event.dy / 3;
         midtown.scroll(-touchScroll);
       }
     },
