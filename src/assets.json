@@ -49,236 +49,9 @@
                 "type": "debug"
               },
               "position": { "x": 0, "y": -1.6, "z": 0.4 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 1,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.1,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 0,
-                "type": "nodetoy"
-              },
-              "position": { "x": 0, "y": -0.75, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 2,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.05,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 2.5,
-                "type": "nodetoy"
-              },
-              "position": { "x": 0.4, "y": -0.75, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 3,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.1,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 0,
-                "type": "nodetoy"
-              },
-              "position": { "x": 0.78, "y": -0.8, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 4,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.05,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 2.5,
-                "type": "nodetoy"
-              },
-              "position": { "x": 0.8, "y": -1.2, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 5,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.1,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 0,
-                "type": "nodetoy"
-              },
-              "position": { "x": 0.8, "y": -1.6, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 6,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.05,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 2.5,
-                "type": "nodetoy"
-              },
-              "position": { "x": 0.8, "y": -2, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 7,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.1,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 0,
-                "type": "nodetoy"
-              },
-              "position": { "x": 0.78, "y": -2.35, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 8,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.05,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 2.5,
-                "type": "nodetoy"
-              },
-              "position": { "x": 0.4, "y": -2.4, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 9,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.1,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 0,
-                "type": "nodetoy"
-              },
-              "position": { "x": 0, "y": -2.4, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 10,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.05,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 2.5,
-                "type": "nodetoy"
-              },
-              "position": { "x": -0.4, "y": -2.4, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 11,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.1,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 0,
-                "type": "nodetoy"
-              },
-              "position": { "x": -0.78, "y": -2.35, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 12,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.05,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 2.5,
-                "type": "nodetoy"
-              },
-              "position": { "x": -0.8, "y": -2, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 13,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.1,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 0,
-                "type": "nodetoy"
-              },
-              "position": { "x": -0.8, "y": -1.6, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 14,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.05,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 2.5,
-                "type": "nodetoy"
-              },
-              "position": { "x": -0.8, "y": -1.2, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 15,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.1,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 0,
-                "type": "nodetoy"
-              },
-              "position": { "x": -0.78, "y": -0.8, "z": 0.45 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 16,
-              "mesh": "assets/funhouse_2.glb",
-              "material": {
-                "hue": 0.05,
-                "url": "https://draft.nodetoy.co/hQFZ9WokSMPrxsSm",
-                "delay": 2.5,
-                "type": "nodetoy"
-              },
-              "position": { "x": -0.4, "y": -0.75, "z": 0.45 }
             }
           ],
-          "lights": [
-            {
-              "behavior": {
-                "type": "alternate",
-                "delay": 0
-              },
-              "subindex": 0,
-              "position": { "x": 0, "y": -1.7, "z": 2 },
-              "color": "0xcc745f"
-            },
-            {
-              "behavior": {
-                "type": "alternate",
-                "delay": 15.5
-              },
-              "subindex": 0,
-              "position": { "x": 0, "y": -1.7, "z": 2 },
-              "color": "0xccc576"
-            }
-          ]
+          "lights": []
         },
         {
           "index": 1,
@@ -366,7 +139,7 @@
               "mesh": "assets/office_1.glb",
               "material": {
                 "type": "nodetoy",
-                "url": "https://draft.nodetoy.co/VaebBrJ123Ldg1oN"
+                "index": 0
               },
               "position": { "x": 0, "y": 0, "z": 0 }
             },
@@ -451,7 +224,7 @@
               "mesh": "assets/stockticker2.glb",
               "material": {
                 "type": "nodetoy",
-                "url": "https://draft.nodetoy.co/VaebBrJ123Ldg1oN"
+                "index": 0
               },
               "position": { "x": 0, "y": 0, "z": 0.05 }
             },
@@ -933,17 +706,6 @@
                 "textures": "fountain3",
                 "transparent": false,
                 "type": "standard"
-              },
-              "position": { "x": 0, "y": -2.4, "z": 0.35 }
-            },
-            {
-              "behavior": "none",
-              "dimmable": false,
-              "subindex": 3,
-              "mesh": "assets/module_fancy_2d.glb",
-              "material": {
-                "type": "nodetoy",
-                "url": "https://draft.nodetoy.co/PkO8tRaaDkjc0H3h"
               },
               "position": { "x": 0, "y": -2.4, "z": 0.35 }
             }

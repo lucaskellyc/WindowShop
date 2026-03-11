@@ -69,6 +69,8 @@ loadManager.onLoad = () => {
 renderers.forEach((renderer) => {
   renderer.setSize(300, window.innerHeight);
   renderer.shadowMap.enabled = true;
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.capabilities.floatFragmentTextures = true;
   container.appendChild(renderer.domElement);
 });
 
