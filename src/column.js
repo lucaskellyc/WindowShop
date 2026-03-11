@@ -1,4 +1,4 @@
-class Column {
+export class Column {
   constructor() {
     this.segments = {};
     this.modules = {};

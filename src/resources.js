@@ -1,4 +1,4 @@
-class ResourceSet {
+export class ResourceSet {
   constructor() {
     this.materials = [];
     this.textures = [];
