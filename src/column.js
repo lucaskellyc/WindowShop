@@ -258,13 +258,10 @@ export class Column {
                 break;
               case "nodetoy":
                 this.modules.objects[i].children[index].shader =
-                  shaders[
-                    this.modules.imports[i].children[index].material.index
-                  ];
-                this.modules.objects[i].children[index].material =
-                  new NodeToyMaterial({
-                    data: this.modules.objects[i].children[index].shader,
-                  });
+                  this.modules.objects[i].children[index].material =
+                    new NodeToyMaterial({
+                      url: this.modules.imports[i].children[index].material.url,
+                    });
                 this.modules.objects[i].children[index].material.name =
                   "nodetoy";
                 if (
