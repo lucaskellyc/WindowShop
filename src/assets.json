@@ -227,111 +227,6 @@
                 "index": 0
               },
               "position": { "x": 0, "y": 0, "z": 0.05 }
-            },
-            {
-              "behavior": {
-                "speed": -0.001,
-                "start": 0,
-                "type": "clockwise"
-              },
-              "dimmable": false,
-              "subindex": 3,
-              "mesh": "assets/clock1b.glb",
-              "material": {
-                "type": "debug",
-                "color": "0x000000"
-              },
-              "position": { "x": -0.4, "y": -0.62, "z": 0.45 }
-            },
-            {
-              "behavior": {
-                "speed": -0.0001,
-                "start": -1,
-                "type": "clockwise"
-              },
-              "dimmable": false,
-              "subindex": 4,
-              "mesh": "assets/clock1a.glb",
-              "material": {
-                "type": "debug",
-                "color": "0x000000"
-              },
-              "position": { "x": -0.4, "y": -0.62, "z": 0.45 }
-            },
-            {
-              "behavior": {
-                "speed": -0.001,
-                "start": 0.7,
-                "type": "clockwise"
-              },
-              "dimmable": false,
-              "subindex": 5,
-              "mesh": "assets/clock1b.glb",
-              "material": {
-                "type": "debug",
-                "color": "0x000000"
-              },
-              "position": { "x": 0.4, "y": -0.62, "z": 0.45 }
-            },
-            {
-              "behavior": {
-                "speed": -0.0001,
-                "start": 0.5,
-                "type": "clockwise"
-              },
-              "dimmable": false,
-              "subindex": 6,
-              "mesh": "assets/clock1a.glb",
-              "material": {
-                "type": "debug",
-                "color": "0x000000"
-              },
-              "position": { "x": 0.4, "y": -0.62, "z": 0.45 }
-            },
-            {
-              "behavior": {
-                "speed": -0.001,
-                "start": 0,
-                "type": "clockwise"
-              },
-              "dimmable": false,
-              "subindex": 7,
-              "mesh": "assets/clock1b.glb",
-              "material": {
-                "type": "debug",
-                "color": "0x000000"
-              },
-              "position": { "x": -0.4, "y": -1.4, "z": 0.45 }
-            },
-            {
-              "behavior": {
-                "speed": -0.0001,
-                "start": 1.8,
-                "type": "clockwise"
-              },
-              "dimmable": false,
-              "subindex": 8,
-              "mesh": "assets/clock1a.glb",
-              "material": {
-                "type": "debug",
-                "color": "0x000000"
-              },
-              "position": { "x": -0.4, "y": -1.4, "z": 0.45 }
-            },
-            {
-              "behavior": {
-                "speed": -0.001,
-                "start": 1.8,
-                "type": "clockwise"
-              },
-              "dimmable": false,
-              "subindex": 9,
-              "mesh": "assets/clock1b.glb",
-              "material": {
-                "type": "debug",
-                "color": "0x000000"
-              },
-              "position": { "x": 0.4, "y": -1.4, "z": 0.45 }
             }
           ],
           "lights": [
@@ -760,7 +655,7 @@
                 "type": "debug",
                 "color": "0x000000"
               },
-              "position": { "x": 0, "y": -3.2, "z": 0 }
+              "position": { "x": 0, "y": -3.5, "z": 0 }
             },
             {
               "behavior": {
@@ -789,22 +684,9 @@
           "index": 3,
           "children": [
             {
-              "behavior": {
-                "type": "turntable"
-              },
-              "dimmable": false,
-              "subindex": 0,
-              "mesh": "assets/module_fancy_3a.glb",
-              "material": {
-                "type": "debug",
-                "color": "0x776e5e"
-              },
-              "position": { "x": 0, "y": -2.7, "z": 0 }
-            },
-            {
               "behavior": "none",
               "dimmable": false,
-              "subindex": 1,
+              "subindex": 0,
               "mesh": "assets/module_fancy_3b.glb",
               "material": {
                 "type": "debug",
@@ -815,7 +697,7 @@
             {
               "behavior": "none",
               "dimmable": false,
-              "subindex": 2,
+              "subindex": 1,
               "mesh": "assets/module_fancy_3c.glb",
               "material": {
                 "type": "debug",
@@ -826,7 +708,7 @@
             {
               "behavior": "none",
               "dimmable": false,
-              "subindex": 3,
+              "subindex": 2,
               "mesh": "assets/segment_seam.glb",
               "material": {
                 "type": "debug",
