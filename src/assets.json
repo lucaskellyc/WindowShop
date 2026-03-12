@@ -19,7 +19,7 @@
           }
         },
         {
-          "mesh": "assets/segment_tester.glb",
+          "mesh": "assets/segment_regal.glb",
           "index": 2,
           "material": {
             "type": "debug",
@@ -27,7 +27,7 @@
           }
         },
         {
-          "mesh": "assets/segment_tester.glb",
+          "mesh": "assets/segment_regal.glb",
           "index": 3,
           "material": {
             "type": "debug",
